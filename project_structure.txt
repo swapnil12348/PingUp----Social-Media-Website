@@ -50,10 +50,26 @@
 └── server/
 │   └── configs/
 │   │   └── db.js
+│   │   └── imageKit.js
+│   │   └── multer.js
+│   │   └── nodeMailer.js
+│   └── controllers/
+│   │   └── postController.js
+│   │   └── storyController.js
+│   │   └── userController.js
 │   └── inngest/
 │   │   └── index.js
+│   └── middlewares/
+│   │   └── auth.js
 │   └── models/
+│   │   └── Connection.js
+│   │   └── Post.js
+│   │   └── Story.js
 │   │   └── User.js
+│   └── routes/
+│   │   └── postRoutes.js
+│   │   └── storyRoutes.js
+│   │   └── userRoutes.js
 │   └── .env
 │   └── package-lock.json
 │   └── package.json
