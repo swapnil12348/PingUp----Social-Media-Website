@@ -111,8 +111,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 This project is licensed under the MIT License.
 
----
 
-### 💡 Tips for your GitHub Profile:
-- **Screenshot:** Once the app is running, take a screenshot of the "Feed" or "Discover" page and add it to the `README` under a `## Preview` section. It makes the project much more attractive to recruiters.
-- **Pinned Repo:** Pin this to your GitHub profile as it shows full-stack proficiency, real-time data handling, and integration with 3rd party APIs (Clerk/ImageKit).
+
+
