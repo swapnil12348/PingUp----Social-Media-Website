@@ -3,6 +3,10 @@
 │   │   └── favicon.svg
 │   │   └── vite.svg
 │   └── src/
+│   │   └── api/
+│   │   │   └── axios.js
+│   │   └── app/
+│   │   │   └── store.js
 │   │   └── assets/
 │   │   │   └── assets.js
 │   │   │   └── bgImage.png
@@ -25,6 +29,13 @@
 │   │   │   └── StoryViewer.jsx
 │   │   │   └── UserCard.jsx
 │   │   │   └── UserProfileInfo.jsx
+│   │   └── features/
+│   │   │   └── connections/
+│   │   │   │   └── connectionsSlice.js
+│   │   │   └── messages/
+│   │   │   │   └── messagesSlice.js
+│   │   │   └── user/
+│   │   │   │   └── userSlice.js
 │   │   └── pages/
 │   │   │   └── ChatBox.jsx
 │   │   │   └── Connections.jsx
@@ -54,6 +65,7 @@
 │   │   └── multer.js
 │   │   └── nodeMailer.js
 │   └── controllers/
+│   │   └── messageController.js
 │   │   └── postController.js
 │   │   └── storyController.js
 │   │   └── userController.js
@@ -63,10 +75,12 @@
 │   │   └── auth.js
 │   └── models/
 │   │   └── Connection.js
+│   │   └── Message.js
 │   │   └── Post.js
 │   │   └── Story.js
 │   │   └── User.js
 │   └── routes/
+│   │   └── messageRoutes.js
 │   │   └── postRoutes.js
 │   │   └── storyRoutes.js
 │   │   └── userRoutes.js

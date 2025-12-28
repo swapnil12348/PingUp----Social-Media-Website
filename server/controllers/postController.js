@@ -44,7 +44,7 @@ export const addPost= async (req,res)=>{
         await Post.create({
             user:userId,
             content,
-            image_url: image_urls,
+            image_urls: image_urls,
             post_type,
         })
         res.json({success:true, message:'Post created successfully'})

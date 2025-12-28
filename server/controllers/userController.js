@@ -81,7 +81,7 @@ export const updateUserData = async (req, res) => {
             const buffer=fs.readFileSync(cover.path);
             const response = await imagekit.upload({
                 file: buffer,
-                fileName: profile.originalname,
+                fileName: cover.originalname,
 
             })
             const url = imagekit.url({
@@ -139,7 +139,7 @@ export const discoverUsers = async (req, res) => {
 export const followUser = async (req, res) => {
     try {
         const {userId}=req.auth();
-        const {input}=req.body;
+        const {id}=req.body;
         const user = await User.findById(userId);
 
         if (user.following.includes(id)) {
@@ -167,7 +167,7 @@ export const followUser = async (req, res) => {
 export const unfollowUser = async (req, res) => {
     try {
         const {userId}=req.auth();
-        const {input}=req.body;
+        const {id}=req.body;
         const user = await User.findById(userId);
 
         user.following=user.following.filter(user=>user!==id);
@@ -194,7 +194,7 @@ export const sendConnectionRequest = async (req, res) => {
         const {id}=req.body;
         //check if user has sent more than 20 connection requests in last 24 hours
 
-        const last24Hours=new Date(Date.now(0- 24*60*60*1000));
+        const last24Hours=new Date(Date.now() - 24*60*60*1000);
         const connectionRequests=await Connection.find({from_user_id:userId, createdAt:{$gte:last24Hours}});
 
         if (connectionRequests.length>=20) {
@@ -232,7 +232,7 @@ export const sendConnectionRequest = async (req, res) => {
 
         }
 
-        return res.json({success:false, message:'Connection request is pending'});
+        return res.json({success:false, message:'Connection request is already sent to this user'});
 
     } catch (error) {
          console.log(error);
@@ -246,6 +246,8 @@ export const getUserConnections = async (req, res) => {
     try {
         const {userId}=req.auth();
         const user=await User.findById(userId).populate('connections followers following');
+
+        if (!user) return res.json({ success: false, message: "User not found" });
 
         const connections=user.connections;
         const followers=user.followers;
