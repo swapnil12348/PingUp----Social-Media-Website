@@ -20,6 +20,7 @@
 │   │   └── components/
 │   │   │   └── Loading.jsx
 │   │   │   └── MenuItems.jsx
+│   │   │   └── Notification.jsx
 │   │   │   └── PostCard.jsx
 │   │   │   └── ProfileModal.jsx
 │   │   │   └── RecentMessages.jsx
