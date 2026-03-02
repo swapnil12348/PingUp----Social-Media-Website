@@ -1,0 +1,60 @@
+﻿└── public/
+│   └── favicon.svg
+│   └── vite.svg
+└── src/
+│   └── api/
+│   │   └── axios.js
+│   └── app/
+│   │   └── store.js
+│   └── assets/
+│   │   └── assets.js
+│   │   └── bgImage.png
+│   │   └── favicon.svg
+│   │   └── group_users.png
+│   │   └── logo.svg
+│   │   └── react.svg
+│   │   └── sample_cover.jpg
+│   │   └── sample_profile.jpg
+│   │   └── sponsored_img.png
+│   └── components/
+│   │   └── Loading.jsx
+│   │   └── MenuItems.jsx
+│   │   └── Notification.jsx
+│   │   └── PostCard.jsx
+│   │   └── ProfileModal.jsx
+│   │   └── RecentMessages.jsx
+│   │   └── Sidebar.jsx
+│   │   └── StoriesBar.jsx
+│   │   └── StoryModal.jsx
+│   │   └── StoryViewer.jsx
+│   │   └── UserCard.jsx
+│   │   └── UserProfileInfo.jsx
+│   └── features/
+│   │   └── connections/
+│   │   │   └── connectionsSlice.js
+│   │   └── messages/
+│   │   │   └── messagesSlice.js
+│   │   └── user/
+│   │   │   └── userSlice.js
+│   └── pages/
+│   │   └── ChatBox.jsx
+│   │   └── Connections.jsx
+│   │   └── CreatePost.jsx
+│   │   └── Discover.jsx
+│   │   └── Feed.jsx
+│   │   └── Layout.jsx
+│   │   └── Login.jsx
+│   │   └── Messages.jsx
+│   │   └── Profile.jsx
+│   └── App.jsx
+│   └── index.css
+│   └── main.jsx
+└── .env
+└── .gitignore
+└── eslint.config.js
+└── index.html
+└── package-lock.json
+└── package.json
+└── README.md
+└── vercel.json
+└── vite.config.js
